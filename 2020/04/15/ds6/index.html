@@ -20,17 +20,28 @@
     <meta name="keywords" content="biantian,jdzv587,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://biantian.github.io/categories/Revision/index.html">
+    <meta name="description" content="Hash tables &amp; Graphic Hash Tables 1. Summary A hash table consists of  an array arr for storing the values. a hash function hash(key). a mechanism for dealing with collisions.  Basic oper">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DS 06">
+<meta property="og:url" content="http://biantian.github.io/2020/04/15/ds6/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hash tables &amp; Graphic Hash Tables 1. Summary A hash table consists of  an array arr for storing the values. a hash function hash(key). a mechanism for dealing with collisions.  Basic oper">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://biantian.github.io/2020/04/15/ds6/stick_out.png">
+<meta property="og:image" content="http://biantian.github.io/2020/04/15/ds6/tuck_in.png">
+<meta property="og:image" content="http://biantian.github.io/2020/04/15/ds6/tombstone.png">
+<meta property="og:image" content="http://biantian.github.io/2020/04/15/ds6/liner_pobing_ep.png">
+<meta property="article:published_time" content="2020-04-15T01:58:55.000Z">
+<meta property="article:modified_time" content="2020-04-15T03:23:13.380Z">
 <meta property="article:author" content="Biantian">
+<meta property="article:tag" content="DS">
+<meta property="article:tag" content="hashtable">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://biantian.github.io/2020/04/15/ds6/stick_out.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
-    <title>Biantian&#39;s Studio</title>
+    <title>DS 06 · Biantian&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -445,12 +456,23 @@ mjx-container + br {
 </style></head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Biantian&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">DS 06</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>Biantian's Studio.</a>
 </header>
@@ -462,24 +484,76 @@ mjx-container + br {
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            DS 06
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "DS">DS</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "hashtable">hashtable</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">425</span>Reading time: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2020/04/15</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -580,242 +654,133 @@ mjx-container + br {
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/04/15/ds6/" >
-            
-                <span>DS 06</span>
-        </a>
-        <div class="abstract-content">
-            Hash tables &amp; Graphic
-Hash Tables
-1. Summary
-A hash table consists of
-
-an array arr for storing the values.
-a hash function hash(key).
-a mechanism for dealing with collisions.
-
-Basic operations
-
-put(key, value)
-delete(key)
-get(key)
-
-Disclaimer: We will consider a simplified sit...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/15</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "DS">DS</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "hashtable">hashtable</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="hash-tables-graphic">Hash tables &amp; Graphic</h1>
+<h2 id="hash-tables">Hash Tables</h2>
+<h3 id="summary">1. Summary</h3>
+<p>A hash table consists of</p>
+<ol type="1">
+<li>an array <code>arr</code> for storing the values.</li>
+<li>a hash function <code>hash(key)</code>.</li>
+<li>a mechanism for dealing with collisions.</li>
+</ol>
+<p>Basic operations</p>
+<ol type="1">
+<li><code>put(key, value)</code></li>
+<li><code>delete(key)</code></li>
+<li><code>get(key)</code></li>
+</ol>
+<p>Disclaimer: We will consider a simplified situation where <code>key</code>s and <code>value</code>s are the same. For example, an assignment is always:</p>
+<p><code>arr[hash(key)] = key</code>.</p>
+<p><br></p>
+<h3 id="two-types-of-solutions-of-hash-collisions">2. Two types of solutions of hash collisions</h3>
+<h4 id="sticking-out-strategy">1. Sticking out strategy</h4>
+<img src="/2020/04/15/ds6/stick_out.png" class="">
+<h4 id="tucked-in-strategy">2. Tucked in strategy</h4>
+<img src="/2020/04/15/ds6/tuck_in.png" class="">
+<h5 id="linear-probing">Linear Probing</h5>
+<ul>
+<li><p>Insertion (initial idea): If the primary position <code>hash(key)</code>is occupied, search for the first available position to the right of it. If we reach the end, we wrap around.</p></li>
+<li><p>Deletion:</p>
+<ol type="1">
+<li><p>Find whether the <code>key</code> is stored in the table: Starting from the primary position <code>hash(key)</code>, go the right, until the <code>key</code> or an empty position is found.</p></li>
+<li><p>If the <code>key</code> is stored in the table, replace it with a <strong>tombstone</strong> (marked as <strong>#</strong>).</p>
+<img src="/2020/04/15/ds6/tombstone.png" class=""></li>
+</ol></li>
+<li><p>Searching:</p>
+<p>Starting from the primary position <code>hash(key)</code>, search for the <code>key</code> to the right. We skip over all <strong>tombstones #</strong>. If we reach an empty position, the the <code>key</code> is not in the table.</p></li>
+<li><p>Inserting (more accurately):</p>
+<ol type="1">
+<li>check if <code>key</code> is stored in the table , and</li>
+<li>if it is not and its the primary position <code>hash(key)</code> is occupied by a different key, search for the first empty or tombstone position to the right of it.</li>
+<li>Store the <code>key</code> there.</li>
+</ol></li>
+</ul>
+<img src="/2020/04/15/ds6/liner_pobing_ep.png" class="">
+<p><br></p>
+<h5 id="double-hashing">Double hashing</h5>
+<p>To deal with the problem caused by <strong>Primary clusters</strong>, we need to use <strong>double hashing</strong>.</p>
+<p>Use primary and secondary hash functions <code>hash1(key)</code> and <code>hash2(key)</code>, respectively.</p>
+<ul>
+<li><p>Insertion: We try the primary position <code>hash1(key)</code> first and, if it fails, we try fallback positions:</p>
+<p><code>(hash1(key) + i*hash2(key)) % TABLE_SIZE</code> (until we find an available space).</p></li>
+</ul>
+<blockquote>
+<p>Avoiding short cycles</p>
+<ol type="1">
+<li>T is a prime number.</li>
+<li><span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex" xmlns="http://www.w3.org/2000/svg" width="6.688ex" height="2.117ex" role="img" focusable="false" viewBox="0 -853.7 2956 935.7" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use xlink:href="#MJX-TEX-I-1D447"></use></g><g data-mml-node="mo" transform="translate(981.8, 0)"><use xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="msup" transform="translate(2037.6, 0)"><g data-mml-node="mn"><use xlink:href="#MJX-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(500, 363) scale(0.707)"><use xlink:href="#MJX-TEX-I-1D458"></use></g></g></g></g></svg></mjx-container></span> and <code>hash2(key)</code> is always an odd number. (preferred)</li>
+</ol>
+</blockquote>
+<p><br></p>
+<h4 id="time-complexity">3. Time Complexity</h4>
+<p>The <strong>load factor</strong> of a hash table is the average number of entries stored on a location:</p>
+<p><span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.781ex" xmlns="http://www.w3.org/2000/svg" width="2.122ex" height="2.379ex" role="img" focusable="false" viewBox="0 -706.5 937.8 1051.5" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mi" transform="translate(256.8, 394) scale(0.707)"><use xlink:href="#MJX-TEX-I-1D45B"></use></g><g data-mml-node="mi" transform="translate(220, -345) scale(0.707)"><use xlink:href="#MJX-TEX-I-1D447"></use></g><rect width="697.8" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container></span></p>
+<p><em>n</em> = the total number of stored entries, <em>T</em> = the size of the hash table. If we have a good hash function, a location given by <code>hash(key)</code> hash the expected number of entries stored there equal to <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.781ex" xmlns="http://www.w3.org/2000/svg" width="2.122ex" height="2.379ex" role="img" focusable="false" viewBox="0 -706.5 937.8 1051.5" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mi" transform="translate(256.8, 394) scale(0.707)"><use xlink:href="#MJX-TEX-I-1D45B"></use></g><g data-mml-node="mi" transform="translate(220, -345) scale(0.707)"><use xlink:href="#MJX-TEX-I-1D447"></use></g><rect width="697.8" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container></span>.</p>
+<h3 id="what-to-do-if-the-table-is-full">3. What to do if the table is full?</h3>
+<p>We say that a hash table is full if the load factor is more than the maximal load factor, that is,</p>
+<p><span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.781ex" xmlns="http://www.w3.org/2000/svg" width="6.458ex" height="2.379ex" role="img" focusable="false" viewBox="0 -706.5 2854.4 1051.5" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mi" transform="translate(256.8, 394) scale(0.707)"><use xlink:href="#MJX-TEX-I-1D45B"></use></g><g data-mml-node="mi" transform="translate(220, -345) scale(0.707)"><use xlink:href="#MJX-TEX-I-1D447"></use></g><rect width="697.8" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(1215.6, 0)"><use xlink:href="#MJX-TEX-N-3E"></use></g><g data-mml-node="mi" transform="translate(2271.4, 0)"><use xlink:href="#MJX-TEX-I-1D706"></use></g></g></g></svg></mjx-container></span></p>
+<p><code>Rehashing (idea):</code> If the table becomes full after an insertion, allocate a new twice as big table and <code>insert</code> all elements from the old table into it.</p>
+<svg style="display: none" id="MJX-SVG-global-cache"><defs><path id="MJX-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-TEX-N-3E" d="M84 520Q84 528 88 533T96 539L99 540Q106 540 253 471T544 334L687 265Q694 260 694 250T687 235Q685 233 395 96L107 -40H101Q83 -38 83 -20Q83 -19 83 -17Q82 -10 98 -1Q117 9 248 71Q326 108 378 132L626 250L378 368Q90 504 86 509Q84 513 84 520Z"></path><path id="MJX-TEX-I-1D706" d="M166 673Q166 685 183 694H202Q292 691 316 644Q322 629 373 486T474 207T524 67Q531 47 537 34T546 15T551 6T555 2T556 -2T550 -11H482Q457 3 450 18T399 152L354 277L340 262Q327 246 293 207T236 141Q211 112 174 69Q123 9 111 -1T83 -12Q47 -12 47 20Q47 37 61 52T199 187Q229 216 266 252T321 306L338 322Q338 323 288 462T234 612Q214 657 183 657Q166 657 166 673Z"></path></defs></svg>
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/04/14/ds5/" >
-            
-                <span>DS 05</span>
-        </a>
-        <div class="abstract-content">
-            Sorting
-Selection Sort
-1. Algorithm:
-
-Split the array in two parts such that:
-
-the first part of the array is sorted.
-the second part contains elements  than the elements in the first part.
-
-Pick the smallest element from the second part.
-Swap it with the element on the position right a...
+        <div class="license-wrapper">
+            <p>Author：<a href="http://biantian.github.io">Biantian</a>
+            <p>原文链接：<a href="http://biantian.github.io/2020/04/15/ds6/">http://biantian.github.io/2020/04/15/ds6/</a>
+            <p>发表日期：<a href="http://biantian.github.io/2020/04/15/ds6/">April 15th 2020, 2:58:55 am</a>
+            <p>更新日期：<a href="http://biantian.github.io/2020/04/15/ds6/">April 15th 2020, 4:23:13 am</a>
+            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/14</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "DS">DS</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/04/14/ds4/" >
-            
-                <span>DS 04</span>
-        </a>
-        <div class="abstract-content">
-            Priority Queues
-(Max) Priority Queue = Max-In-First-Out
-
-1. Basic Operations
-
-insert(value,priority)
-deleteMax()
-update(value,priority)
-isEmpty()
-
-2. Naïve implementation: Array
-Store in an array, ordered by priority (the highest at the end):
-
-insert(value, priority) - find the posit...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/14</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "DS">DS</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/04/13/ds3/" >
-            
-                <span>DS 03</span>
-        </a>
-        <div class="abstract-content">
-            Time Complexity
-
-Average Case complexity = average complexity over all possible inputs/situations (we need to know the likelihood of each of the input!)
-Worst Case complexity = the worst complexity over all possible inputs/situations
-Best Case complexity (mostly useless) = the best complexity...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "DS">DS</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/04/13/ds2/" >
-            
-                <span>DS 02</span>
-        </a>
-        <div class="abstract-content">
-            Stack &amp; Queue
-Stacks
-Stack is an abstract data type, LIFOs (Last-In-First-Out).
-1. Basic operation
-
-push(x) = insert_beg
-pop() = delete_beg
-is_empty() = is_empty (for linked list)
-
-2. Stacks as arrays
-To avoid calling allocate_memory all the time, we need to know the maximum size of...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "DS">DS</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/04/09/ds1/" >
-            
-                <span>DS 01</span>
-        </a>
-        <div class="abstract-content">
-            Array &amp; Linked list
-Arrays
-1. List as an array of a fixed length
-In Java:
-1234567891011final int[] nums = new int[4];x = nums[3];	// 53nums[3] = 4;// More complicated arraysclass Student&#123;    String name;    int id;&#125;final Student[] studs = new Student[3];studs[1].name = "John";st...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "DS">DS</a>
-    
-</div>
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2020/04/14/ds5/" title= "DS 05">
+                    <div class="prevTitle">DS 05</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+    <div id="lv-container" data-id="city" data-uid= MTAyMC80OTY1MC8yNjE0MQ==>
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- gitalk评论 -->
+
+    <!-- utteranc评论 -->
+
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -904,6 +869,24 @@ In Java:
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hash-tables-graphic"><span class="toc-number">1.</span> <span class="toc-text">Hash tables &amp; Graphic</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#hash-tables"><span class="toc-number">1.1.</span> <span class="toc-text">Hash Tables</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#summary"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. Summary</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#two-types-of-solutions-of-hash-collisions"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. Two types of solutions of hash collisions</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#sticking-out-strategy"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">1. Sticking out strategy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tucked-in-strategy"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">2. Tucked in strategy</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#linear-probing"><span class="toc-number">1.1.2.2.1.</span> <span class="toc-text">Linear Probing</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#double-hashing"><span class="toc-number">1.1.2.2.2.</span> <span class="toc-text">Double hashing</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#time-complexity"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">3. Time Complexity</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#what-to-do-if-the-table-is-full"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. What to do if the table is full?</span></a></li></ol></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1115,6 +1098,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
