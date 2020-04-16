@@ -29,7 +29,7 @@
 <meta property="og:description" content="Hexo Project Installation  安装指令 npm是nodejs指令 npm install -g hexo-cli 版本检查 在PowerShell中无法运行，只能用cmd hexo -v  Project Creation  创建项目 注意先加载到想要放项目的文件夹中：cd &lt;foldername&gt; 这条指令会把需要的文件clone到">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-09T12:21:46.000Z">
-<meta property="article:modified_time" content="2020-04-14T09:33:47.826Z">
+<meta property="article:modified_time" content="2020-04-16T13:34:07.733Z">
 <meta property="article:author" content="Biantian">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="web">
@@ -526,7 +526,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">741</span>Reading time: <span class="post-count reading-time">3 min</span></span>
+                        <span>Word count: <span class="post-count word-count">902</span>Reading time: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -765,6 +765,19 @@ height:50vh;
 <p>由于<strong>archer</strong>这个主题已经支持评论了，直接在_config.yml里添加对应的<code>data-uid</code>就行了。<a href="https://juejin.im/post/5a632dfcf265da3e484be90c" target="_blank" rel="noopener">参考</a>.</p>
 <h3 id="management">2. Management</h3>
 <p>View <a href="https://livere.com/insight/communite" target="_blank" rel="noopener">Link</a>.</p>
+<h2 id="google-search-console">Google Search Console</h2>
+<p>我想要在google上搜索到我的网站，于是先在Google Search Console上注册了一下。</p>
+<ol type="1">
+<li><p>URL Prefix</p>
+<p>参考<a href="https://stackoverflow.com/questions/25258660/how-do-i-add-a-readme-md-file-into-the-root-directory-of-the-generated-blog-by-h/31051913#31051913" target="_blank" rel="noopener">link</a>，将googledxxxxx.html用于认证的文件添加到了网站中。认证成功。但是从google中还是搜索不到。</p>
+<p>添加hexo-generator-sitemap生成sitemap.xml文件，在GSC里面添加Sitemaps。</p></li>
+<li><p>Domain</p>
+<p>由于第一种方法没有看到成效，我尝试了Domain方法。</p>
+<p>首先获取验证TXT：<code>google-site-verification=roAMZofbULJNRtnv5NJxvpi9pqhdCV7sITzCAmAbWEE</code></p>
+<p>然后在<code>themes/archer/layout/_partial/base-head.ejs</code>中的<code>&lt;head&gt;</code>标签中添加了</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"google-site-verification"</span> <span class="attr">content</span>=<span class="string">"roAMZofbULJNRtnv5NJxvpi9pqhdCV7sITzCAmAbWEE"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>然后。。然后就没有然后了，直接认证失败。</p></li>
+</ol>
 <svg style="display: none" id="MJX-SVG-global-cache"><defs><path id="MJX-TEX-N-21D2" d="M580 514Q580 525 596 525Q601 525 604 525T609 525T613 524T615 523T617 520T619 517T622 512Q659 438 720 381T831 300T927 263Q944 258 944 250T935 239T898 228T840 204Q696 134 622 -12Q618 -21 615 -22T600 -24Q580 -24 580 -17Q580 -13 585 0Q620 69 671 123L681 133H70Q56 140 56 153Q56 168 72 173H725L735 181Q774 211 852 250Q851 251 834 259T789 283T735 319L725 327H72Q56 332 56 347Q56 360 70 367H681L671 377Q638 412 609 458T580 514Z"></path></defs></svg>
     </article>
     <!-- license  -->
@@ -773,7 +786,7 @@ height:50vh;
             <p>Author：<a href="http://biantian.github.io">Biantian</a>
             <p>原文链接：<a href="http://biantian.github.io/2020/04/09/p1/">http://biantian.github.io/2020/04/09/p1/</a>
             <p>发表日期：<a href="http://biantian.github.io/2020/04/09/p1/">April 9th 2020, 1:21:46 pm</a>
-            <p>更新日期：<a href="http://biantian.github.io/2020/04/09/p1/">April 14th 2020, 10:33:47 am</a>
+            <p>更新日期：<a href="http://biantian.github.io/2020/04/09/p1/">April 16th 2020, 2:34:07 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -928,7 +941,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-project"><span class="toc-number">1.</span> <span class="toc-text">Hexo Project</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#installation"><span class="toc-number">1.1.</span> <span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#project-creation"><span class="toc-number">1.2.</span> <span class="toc-text">Project Creation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#structure"><span class="toc-number">1.3.</span> <span class="toc-text">Structure</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-blog-post"><span class="toc-number">1.4.</span> <span class="toc-text">New Blog Post</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-page"><span class="toc-number">1.5.</span> <span class="toc-text">New Page</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scaffolds"><span class="toc-number">1.6.</span> <span class="toc-text">Scaffolds</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tags-categories"><span class="toc-number">1.7.</span> <span class="toc-text">Tags &amp; Categories</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tag-plugins"><span class="toc-number">1.8.</span> <span class="toc-text">Tag Plugins</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#asset-folder"><span class="toc-number">1.9.</span> <span class="toc-text">Asset Folder</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#themes"><span class="toc-number">1.10.</span> <span class="toc-text">Themes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github"><span class="toc-number">1.11.</span> <span class="toc-text">Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#create-a-theme"><span class="toc-number">1.12.</span> <span class="toc-text">Create a theme</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#deployment"><span class="toc-number">1.13.</span> <span class="toc-text">Deployment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#comments"><span class="toc-number">1.14.</span> <span class="toc-text">Comments</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#livere"><span class="toc-number">1.14.1.</span> <span class="toc-text">1. LiveRe</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#management"><span class="toc-number">1.14.2.</span> <span class="toc-text">2. Management</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-project"><span class="toc-number">1.</span> <span class="toc-text">Hexo Project</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#installation"><span class="toc-number">1.1.</span> <span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#project-creation"><span class="toc-number">1.2.</span> <span class="toc-text">Project Creation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#structure"><span class="toc-number">1.3.</span> <span class="toc-text">Structure</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-blog-post"><span class="toc-number">1.4.</span> <span class="toc-text">New Blog Post</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-page"><span class="toc-number">1.5.</span> <span class="toc-text">New Page</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scaffolds"><span class="toc-number">1.6.</span> <span class="toc-text">Scaffolds</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tags-categories"><span class="toc-number">1.7.</span> <span class="toc-text">Tags &amp; Categories</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tag-plugins"><span class="toc-number">1.8.</span> <span class="toc-text">Tag Plugins</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#asset-folder"><span class="toc-number">1.9.</span> <span class="toc-text">Asset Folder</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#themes"><span class="toc-number">1.10.</span> <span class="toc-text">Themes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github"><span class="toc-number">1.11.</span> <span class="toc-text">Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#create-a-theme"><span class="toc-number">1.12.</span> <span class="toc-text">Create a theme</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#deployment"><span class="toc-number">1.13.</span> <span class="toc-text">Deployment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#comments"><span class="toc-number">1.14.</span> <span class="toc-text">Comments</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#livere"><span class="toc-number">1.14.1.</span> <span class="toc-text">1. LiveRe</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#management"><span class="toc-number">1.14.2.</span> <span class="toc-text">2. Management</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#google-search-console"><span class="toc-number">1.15.</span> <span class="toc-text">Google Search Console</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
