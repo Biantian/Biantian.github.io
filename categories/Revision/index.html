@@ -589,21 +589,57 @@ mjx-container + br {
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/04/22/ai1/" >
+            
+                <span>Intro to AI 01</span>
+        </a>
+        <div class="abstract-content">
+            Artificial Intelligence Algorithms
+
+Artificial intelligence can be used to automatically create models from data.
+Typically not guaranteed to find perfect models, but may be able to find good models, depending on the difficulty of the problem and on the data available.
+Good for problems where...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/22</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "AI">AI</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/04/22/osn1/" >
             
                 <span>Operating System &amp; Networking 01</span>
         </a>
         <div class="abstract-content">
-            Introduction to Operating Systems1. What happens when a program runs?
+            Introduction to Operating Systems
+1. What happens when a program runs?
+
 It executes instructions.
 Von Neumann model of computation 
 
 
+2. Making System Easy to Use
+Body of Software: Operating System (OS)
+Responsibility
 
-2. Making System Easy to UseBody of Software: Operating System (OS)Responsibility
 Programs appear to run simultaneously.
-Allowing program to share memory, 
-Enabling...
+Allowing program to share m...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -633,17 +669,15 @@ Enabling...
         </a>
         <div class="abstract-content">
             Basic Set Theory
+
 Set
  no duplicate element.
-
 Subset
  . A is a subset of B if every element in A is contained in B
-
 Proper Subset
 . Set A is said to be a proper subset of B if every element in A is contained in B AND .
-
 Union
- . The Union of two sets A and B is the set that contains all the elemen...
+ . The Union of two sets A and B is the set that contains all the...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -672,7 +706,10 @@ Union
                 <span>DS 06</span>
         </a>
         <div class="abstract-content">
-            Hash tables &amp; GraphicHash Tables1. SummaryA hash table consists of 
+            Hash tables &amp; Graphic
+Hash Tables
+1. Summary
+A hash table consists of
 
 an array arr for storing the values.
 a hash function hash(key).
@@ -684,7 +721,7 @@ put(key, value)
 delete(key)
 get(key)
 
-Disclaimer: We will consider a simplified situation where keys...
+Disclaimer: We will consider a simplified sit...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -715,14 +752,17 @@ Disclaimer: We will consider a simplified situation where keys...
                 <span>DS 05</span>
         </a>
         <div class="abstract-content">
-            SortingSelection Sort1. Algorithm:
+            Sorting
+Selection Sort
+1. Algorithm:
+
 Split the array in two parts such that:
+
 the first part of the array is sorted.
 the second part contains elements  than the elements in the first part.
 
-
 Pick the smallest element from the second part.
-Swap it with the element on the position right after the sort...
+Swap it with the element on the position right a...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -751,17 +791,20 @@ Swap it with the element on the position right after the sort...
                 <span>DS 04</span>
         </a>
         <div class="abstract-content">
-            Priority Queues(Max) Priority Queue = Max-In-First-Out
+            Priority Queues
+(Max) Priority Queue = Max-In-First-Out
 
 1. Basic Operations
+
 insert(value,priority)
 deleteMax()
 update(value,priority)
 isEmpty()
 
-2. Naïve implementation: ArrayStore in an array, ordered by priority (the highest at the end):
+2. Naïve implementation: Array
+Store in an array, ordered by priority (the highest at the end):
 
-insert(value, priority) - find the position where to sto...
+insert(value, priority) - find the posit...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -791,11 +834,10 @@ insert(value, priority) - find the position where to sto...
         </a>
         <div class="abstract-content">
             Time Complexity
-Average Case complexity = average complexity over all possible inputs/situations (we need to know the likelihood of each of the input!) 
 
-Worst Case complexity = the worst complexity over all possible inputs/situations 
-
-Best Case complexity (mostly useless) = the best complexity ...
+Average Case complexity = average complexity over all possible inputs/situations (we need to know the likelihood of each of the input!)
+Worst Case complexity = the worst complexity over all possible inputs/situations
+Best Case complexity (mostly useless) = the best complexity...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -824,13 +866,17 @@ Best Case complexity (mostly useless) = the best complexity ...
                 <span>DS 02</span>
         </a>
         <div class="abstract-content">
-            Stack &amp; QueueStacksStack is an abstract data type, LIFOs (Last-In-First-Out).
-1. Basic  operation
-push(x)  = insert_beg
+            Stack &amp; Queue
+Stacks
+Stack is an abstract data type, LIFOs (Last-In-First-Out).
+1. Basic operation
+
+push(x) = insert_beg
 pop() = delete_beg
 is_empty() = is_empty (for linked list)
 
-2. Stacks as arraysTo avoid calling allocate_memory all the time, we need to know the maximum size of the stack i...
+2. Stacks as arrays
+To avoid calling allocate_memory all the time, we need to know the maximum size of...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -859,8 +905,11 @@ is_empty() = is_empty (for linked list)
                 <span>DS 01</span>
         </a>
         <div class="abstract-content">
-            Array &amp; Linked listArrays1. List as an array of a fixed lengthIn Java:
-1234567891011final int[] nums = new int[4];x = nums[3];	// 53nums[3] = 4;// More complicated arraysclass Student&#123;    String name;    int id;&#125;final Student[] studs = new Student[3];studs[1].name = "John";studs[1]....
+            Array &amp; Linked list
+Arrays
+1. List as an array of a fixed length
+In Java:
+1234567891011final int[] nums = new int[4];x = nums[3];	// 53nums[3] = 4;// More complicated arraysclass Student&#123;    String name;    int id;&#125;final Student[] studs = new Student[3];studs[1].name = "John";st...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -1083,9 +1132,20 @@ is_empty() = is_empty (for linked list)
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 10
+        Total : 11
         </div>
         <!-- search  -->
         
@@ -1098,6 +1158,11 @@ is_empty() = is_empty (for linked list)
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/22</span><a class="archive-post-title" href= "/2020/04/22/ai1/" >Intro to AI 01</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1154,11 +1219,11 @@ is_empty() = is_empty (for linked list)
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="DS"><span class="iconfont-archer">&#xe606;</span>DS</span>
+        <span class="sidebar-tag-name" data-tags="AI"><span class="iconfont-archer">&#xe606;</span>AI</span>
     
         <span class="sidebar-tag-name" data-tags="DB"><span class="iconfont-archer">&#xe606;</span>DB</span>
     
-        <span class="sidebar-tag-name" data-tags="OSN"><span class="iconfont-archer">&#xe606;</span>OSN</span>
+        <span class="sidebar-tag-name" data-tags="DS"><span class="iconfont-archer">&#xe606;</span>DS</span>
     
         <span class="sidebar-tag-name" data-tags="hashtable"><span class="iconfont-archer">&#xe606;</span>hashtable</span>
     
@@ -1167,6 +1232,8 @@ is_empty() = is_empty (for linked list)
         <span class="sidebar-tag-name" data-tags="web"><span class="iconfont-archer">&#xe606;</span>web</span>
     
         <span class="sidebar-tag-name" data-tags="note"><span class="iconfont-archer">&#xe606;</span>note</span>
+    
+        <span class="sidebar-tag-name" data-tags="OSN"><span class="iconfont-archer">&#xe606;</span>OSN</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>

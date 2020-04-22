@@ -21,12 +21,12 @@
     <meta name="keywords" content="biantian,jdzv587,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="Introduction to Operating Systems1. What happens when a program runs? It executes instructions. Von Neumann model of computation     2. Making System Easy to UseBody of Software: Operating System (OS)">
+    <meta name="description" content="Introduction to Operating Systems 1. What happens when a program runs?  It executes instructions. Von Neumann model of computation    2. Making System Easy to Use Body of Software: Operating S">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Operating System &amp; Networking 01">
 <meta property="og:url" content="http://biantian.github.io/2020/04/22/osn1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Introduction to Operating Systems1. What happens when a program runs? It executes instructions. Von Neumann model of computation     2. Making System Easy to UseBody of Software: Operating System (OS)">
+<meta property="og:description" content="Introduction to Operating Systems 1. What happens when a program runs?  It executes instructions. Von Neumann model of computation    2. Making System Easy to Use Body of Software: Operating S">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://biantian.github.io/2020/04/22/osn1/von_neumann.png">
 <meta property="og:image" content="http://biantian.github.io/2020/04/22/osn1/von_neumann_2.png">
@@ -523,7 +523,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">345</span>Reading time: <span class="post-count reading-time">2 min</span></span>
+                        <span>Word count: <span class="post-count word-count">346</span>Reading time: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -652,68 +652,70 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="Introduction-to-Operating-Systems"><a href="#Introduction-to-Operating-Systems" class="headerlink" title="Introduction to Operating Systems"></a>Introduction to Operating Systems</h1><h2 id="1-What-happens-when-a-program-runs"><a href="#1-What-happens-when-a-program-runs" class="headerlink" title="1. What happens when a program runs?"></a>1. What happens when a program runs?</h2><ul>
+        <h1 id="introduction-to-operating-systems">Introduction to Operating Systems</h1>
+<h2 id="what-happens-when-a-program-runs">1. What happens when a program runs?</h2>
+<ul>
 <li>It executes instructions.</li>
 <li>Von Neumann model of computation <img src="/2020/04/22/osn1/von_neumann.png" class=""><img src="/2020/04/22/osn1/von_neumann_2.png" class=""></li>
 </ul>
-<br>
-
-<h2 id="2-Making-System-Easy-to-Use"><a href="#2-Making-System-Easy-to-Use" class="headerlink" title="2. Making System Easy to Use"></a>2. Making System Easy to Use</h2><h3 id="Body-of-Software-Operating-System-OS"><a href="#Body-of-Software-Operating-System-OS" class="headerlink" title="Body of Software: Operating System (OS)"></a>Body of Software: Operating System (OS)</h3><h4 id="Responsibility"><a href="#Responsibility" class="headerlink" title="Responsibility"></a>Responsibility</h4><ul>
+<p><br></p>
+<h2 id="making-system-easy-to-use">2. Making System Easy to Use</h2>
+<h3 id="body-of-software-operating-system-os">Body of Software: Operating System (OS)</h3>
+<h4 id="responsibility">Responsibility</h4>
+<ul>
 <li>Programs appear to run simultaneously.</li>
-<li>Allowing program to share memory, </li>
+<li>Allowing program to share memory,</li>
 <li>Enabling programs to interact with devices. I/O</li>
 </ul>
-<br>
-
-<h4 id="1-Virtualization"><a href="#1-Virtualization" class="headerlink" title="1. Virtualization"></a>1. Virtualization</h4><ul>
-<li><p>The OS takes a <strong>physical resource</strong> (such as the processor, or memory, or a disk) and </p>
-</li>
+<p><br></p>
+<h4 id="virtualization">1. Virtualization</h4>
+<ul>
+<li><p>The OS takes a <strong>physical resource</strong> (such as the processor, or memory, or a disk) and</p></li>
 <li><p>Transforms it into a more general, powerful, and easy-to-use <strong>virtual</strong> form of itself.</p>
-<p>Thus, we sometimes refer to the operating system as a <strong>virtual machine</strong></p>
-</li>
+<p>Thus, we sometimes refer to the operating system as a <strong>virtual machine</strong></p></li>
 </ul>
-<p>In order to allow users to tell the OS what to do: </p>
+<p>In order to allow users to tell the OS what to do:</p>
 <ul>
 <li><p>make use of the features of virtual machine (such as running a program, or allocating memory, or accessing a file)</p>
 <ul>
 <li>A typical OS provides APIs to do <strong>System Call</strong>.</li>
 <li>An operating system provides a <strong>standard library</strong> to applications.</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p><strong>OS is a Resource Manager</strong>[^1]</p>
+<p><strong>OS is a Resource Manager</strong><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <ul>
 <li>Virtualization allows many programs to run (Sharing the CPU)</li>
 <li>Concurrent access to each program’s instruction and data (Sharing memory)</li>
-<li>Many programs can access devices  (Sharing disks)</li>
+<li>Many programs can access devices (Sharing disks)</li>
 </ul>
-<br>
-
-<h4 id="2-Concurrency"><a href="#2-Concurrency" class="headerlink" title="2. Concurrency"></a>2. Concurrency</h4><p>An operating system needs to be a great juggler. Most noticeable in <strong>multi-threaded</strong> programs. A thread is like a function running within same memory space of other functions, with more than one active at a time.</p>
-<h4 id="3-Persistence"><a href="#3-Persistence" class="headerlink" title="3. Persistence"></a>3. Persistence</h4><ul>
+<p><br></p>
+<h4 id="concurrency">2. Concurrency</h4>
+<p>An operating system needs to be a great juggler. Most noticeable in <strong>multi-threaded</strong> programs. A thread is like a function running within same memory space of other functions, with more than one active at a time.</p>
+<h4 id="persistence">3. Persistence</h4>
+<ul>
 <li>In system memory, data can be easily lost, as devices such as DRAM store values in a <strong>volatile</strong> manner; when power goes away or the system crashes, any data in memory is lost.</li>
 <li>Thus, we need hardware and software to be able to store data <strong>persistently</strong>;</li>
 <li>The hardware comes in the form of some kind of input/output or I/O device; in modern systems, a <strong>hard drive</strong> is a common repository for long-lived information.</li>
 <li>The software in the operating system that usually manages the disk is called the file system.</li>
 </ul>
-<br>
-
-<h4 id="OS-Design-Goals"><a href="#OS-Design-Goals" class="headerlink" title="OS Design Goals"></a>OS Design Goals</h4><ul>
+<p><br></p>
+<h4 id="os-design-goals">OS Design Goals</h4>
+<ul>
 <li><p>Basic goal: <strong>abstraction</strong></p>
-<p>Make system convenient and easy to use.</p>
-</li>
-<li><p>Provide high <strong>performance (minimize overheads)</strong>.</p>
-</li>
-<li><p>Provide <strong>protection</strong> via <strong>isolation</strong>.</p>
-</li>
-<li><p>Ensure <strong>reliability</strong>.</p>
-</li>
+<p>Make system convenient and easy to use.</p></li>
+<li><p>Provide high <strong>performance (minimize overheads)</strong>.</p></li>
+<li><p>Provide <strong>protection</strong> via <strong>isolation</strong>.</p></li>
+<li><p>Ensure <strong>reliability</strong>.</p></li>
 </ul>
-<br>
-
-<br>
-
-<h1 id="OS-The-Process"><a href="#OS-The-Process" class="headerlink" title="OS: The Process"></a>OS: The Process</h1><p>[^1]: Refer to the physical resource mentioned above. Processor == CPU</p>
+<p><br></p>
+<p><br></p>
+<h1 id="os-the-process">OS: The Process</h1>
+<section class="footnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Refer to the physical resource mentioned above. Processor == CPU<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
 <svg style="display: none" id="MJX-SVG-global-cache"><defs></defs></svg>
     </article>
     <!-- license  -->
@@ -729,6 +731,11 @@ height:50vh;
     <!-- paginator  -->
     <ul class="post-paginator">
         <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2020/04/22/ai1/" title= "Intro to AI 01">
+                    <div class="nextTitle">Intro to AI 01</div>
+                </a>
             
         </li>
         <li class="previous">
@@ -877,7 +884,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Introduction-to-Operating-Systems"><span class="toc-number">1.</span> <span class="toc-text">Introduction to Operating Systems</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-What-happens-when-a-program-runs"><span class="toc-number">1.1.</span> <span class="toc-text">1. What happens when a program runs?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Making-System-Easy-to-Use"><span class="toc-number">1.2.</span> <span class="toc-text">2. Making System Easy to Use</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Body-of-Software-Operating-System-OS"><span class="toc-number">1.2.1.</span> <span class="toc-text">Body of Software: Operating System (OS)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Responsibility"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">Responsibility</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Virtualization"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">1. Virtualization</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-Concurrency"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">2. Concurrency</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Persistence"><span class="toc-number">1.2.1.4.</span> <span class="toc-text">3. Persistence</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OS-Design-Goals"><span class="toc-number">1.2.1.5.</span> <span class="toc-text">OS Design Goals</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OS-The-Process"><span class="toc-number">2.</span> <span class="toc-text">OS: The Process</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#introduction-to-operating-systems"><span class="toc-number">1.</span> <span class="toc-text">Introduction to Operating Systems</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#what-happens-when-a-program-runs"><span class="toc-number">1.1.</span> <span class="toc-text">1. What happens when a program runs?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#making-system-easy-to-use"><span class="toc-number">1.2.</span> <span class="toc-text">2. Making System Easy to Use</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#body-of-software-operating-system-os"><span class="toc-number">1.2.1.</span> <span class="toc-text">Body of Software: Operating System (OS)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#responsibility"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">Responsibility</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#virtualization"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">1. Virtualization</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#concurrency"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">2. Concurrency</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#persistence"><span class="toc-number">1.2.1.4.</span> <span class="toc-text">3. Persistence</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#os-design-goals"><span class="toc-number">1.2.1.5.</span> <span class="toc-text">OS Design Goals</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#os-the-process"><span class="toc-number">2.</span> <span class="toc-text">OS: The Process</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -994,9 +1001,20 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 10
+        Total : 11
         </div>
         <!-- search  -->
         
@@ -1009,6 +1027,11 @@ top:50vh;
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/22</span><a class="archive-post-title" href= "/2020/04/22/ai1/" >Intro to AI 01</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1065,11 +1088,11 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="DS"><span class="iconfont-archer">&#xe606;</span>DS</span>
+        <span class="sidebar-tag-name" data-tags="AI"><span class="iconfont-archer">&#xe606;</span>AI</span>
     
         <span class="sidebar-tag-name" data-tags="DB"><span class="iconfont-archer">&#xe606;</span>DB</span>
     
-        <span class="sidebar-tag-name" data-tags="OSN"><span class="iconfont-archer">&#xe606;</span>OSN</span>
+        <span class="sidebar-tag-name" data-tags="DS"><span class="iconfont-archer">&#xe606;</span>DS</span>
     
         <span class="sidebar-tag-name" data-tags="hashtable"><span class="iconfont-archer">&#xe606;</span>hashtable</span>
     
@@ -1078,6 +1101,8 @@ top:50vh;
         <span class="sidebar-tag-name" data-tags="web"><span class="iconfont-archer">&#xe606;</span>web</span>
     
         <span class="sidebar-tag-name" data-tags="note"><span class="iconfont-archer">&#xe606;</span>note</span>
+    
+        <span class="sidebar-tag-name" data-tags="OSN"><span class="iconfont-archer">&#xe606;</span>OSN</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
